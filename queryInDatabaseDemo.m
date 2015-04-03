@@ -7,9 +7,9 @@ numRetrieval = 30;
 % load dataset
 if strcmp(db_name, 'database')
     load feat4096Norml.mat;
-    path_imgDB = './database/';
+    path_imgDB = './corel1k/';
     addpath(path_imgDB);
-    queryID = 600;  %查询ID
+    queryID = 130;
 elseif strcmp(db_name, '256_ObjectCategories')
     load 256feat2048Norml.mat; % 0.495471
     % load 256feat4096Norml.mat % 0.484413
@@ -27,4 +27,4 @@ end
 % feat = feat*pc;
 
 %virsulazation
-retrieval_virsulazation( queryID, numRetrieval, feat, rgbImgList);
+retrieval_virsulazation( queryID, numRetrieval, feat_norm, imgNamList);

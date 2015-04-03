@@ -3,14 +3,14 @@
 
 clear all;close all;clc;
 
-run D:/matlabTools/matconvnet-1.0-beta10/matlab/vl_setupnn  % 换成你的vl_setupnn.m具体路径
+run D:/matlabTools/matconvnet-1.0-beta10/matlab/vl_setupnn
 
 %% Step 1 lOADING PATHS
 path_imgDB = './database/';
 addpath(path_imgDB);
 addpath tools;
 
-net = load('imagenet-vgg-f.mat') ;  % 换成你下载的imagenet-vgg-f.mat具体路径
+net = load('D:/matlabTools/matconvnet-1.0-beta10/matlab/test/imagenet-vgg-verydeep-16.mat') ;
 
 %% Step 2 LOADING IMAGE AND EXTRACTING FEATURE
 imgFiles = dir(path_imgDB);
@@ -20,40 +20,33 @@ imgNamList = imgNamList';
 
 numImg = length(imgNamList);
 feat = [];
-k = 0;
 rgbImgList = {};
 
+%parpool;
+
+%parfor i = 1:numImg
 for i = 1:numImg
    oriImg = imread(imgNamList{i, 1}); 
-   tmpNam = imgNamList{i, 1};
    if size(oriImg, 3) == 3
-       k = k+1;
        im_ = single(oriImg) ; % note: 255 range
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
-       featVec = res(19).x;
+       featVec = res(36).x;
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
-       rgbImgList{k,1} = tmpNam;
    else
-       rgbImg(:,:,1) = oriImg;
-       rgbImg(:,:,2) = oriImg;
-       rgbImg(:,:,3) = oriImg;
-       k = k+1;
-       im_ = single(rgbImg) ; % note: 255 range
+       im_ = single(repmat(oriImg,[1 1 3])) ; % note: 255 range
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
-       featVec = res(19).x;
+       featVec = res(36).x;
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
-       rgbImgList{k,1} = tmpNam;
-       clear rgbImg;
    end
 end
 
-feat = normalize1(feat);
-save('Feat4096Norml.mat','feat', 'rgbImgList', '-v7.3');
+feat_norm = normalize1(feat);
+save('feat4096Norml.mat','feat_norm', 'imgNamList', '-v7.3');
