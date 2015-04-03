@@ -2,6 +2,19 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)
 
+## 运行步骤
+
+- 首先你的图像数据库做成文件夹databaseClassified中的形式，以方便后面计算mAP。如果不需要计算mAP的话，那你就直接把你的图像库文件夹名字命名为database,并放在该路径下。
+
+```
+python movefiles.py
+```
+
+- 接着便可以抽取特征。运行`extractCNN.m`，要用parfor并行的话，直接修改注释部分即可。
+- 检索可视化。这一步运行`queryInDatabaseDemo.m`即可。
+- 计算mAP。运行`compute_MAP.m`.
+
+**如果你在公开的数据集上测试CNN，可以把你跑的mAP提交上来，避免大家再做重复的测试**
 
 **下面的这个表格请忽略**
 
