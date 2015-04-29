@@ -12,11 +12,9 @@ python movefiles.py
 
 - 接着便可以抽取特征。运行`extractCNN.m`，要用parfor并行的话，直接修改注释部分即可。
 - 检索可视化。这一步运行`queryInDatabaseDemo.m`即可。
-- 计算mAP。运行`compute_MAP.m`.
+- 计算mAP。运行`compute_MAP.m`，关于mAP的计算，请参阅我画的mAP计算过程示意图：[信息检索评价指标](http://yongyuan.name/blog/evaluation-of-information-retrieval.html)
 
 **如果你在公开的数据集上测试CNN，可以把你跑的mAP提交上来，避免大家再做重复的测试**
-
-**下面的这个表格请忽略**
 
 | 方法 | 数据维数 | 模型 | MAP |
 |:-----:|:-------:|:-----:|:-----:|
