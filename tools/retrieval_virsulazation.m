@@ -6,9 +6,8 @@ function retrieval_virsulazation( queryID, numRetrieval, featNorm, rgbImgList)
 % virsulazation
 
 QueryVec = featNorm(queryID, :);
-score = zeros(length(featNorm), 1);
-
 [n,d] = size(featNorm);
+score = zeros(n, 1);
 
 for loop = 1:n
     VecTemp = featNorm(loop, :);
