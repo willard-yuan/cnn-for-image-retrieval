@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-# 用于将不同类别的文件夹下的图片搬到某个文件夹，并在文件前面加上目录名字
+# 用于将不同类别的文件夹下的图片搬到某个文件夹，并在文件前面加上目录名字:
+#比如caltech256，里面有256个文件夹，每个文件夹放的都是一类，用movefiles.py可以生成一个database的文件夹，
+#这个文件夹把databaseClassified的图片都搬到里面来，并且生成待查询的图片queryImgs.txt和databaseClasses.txt
+# python movefiles.py
 
 import os
 import fnmatch
