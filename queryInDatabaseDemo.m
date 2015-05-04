@@ -2,14 +2,14 @@ clear all; close all; clc;
 addpath('tools');
 
 db_name = 'database'; % 'CALTECH256' as a option
-numRetrieval = 30;
+numRetrieval = 8;
 
 % load dataset
 if strcmp(db_name, 'database')
     load feat4096Norml.mat;
-    path_imgDB = './corel1k/';
+    path_imgDB = './database/';
     addpath(path_imgDB);
-    queryID = 130;
+    queryID = 2;
 elseif strcmp(db_name, '256_ObjectCategories')
     load 256feat2048Norml.mat; % 0.495471
     % load 256feat4096Norml.mat % 0.484413
