@@ -2,6 +2,8 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)
 
+![](http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg)
+
 ## 运行步骤
 
 - 首先你的图像数据库做成文件夹databaseClassified中的形式，以方便后面计算mAP。如果不需要计算mAP的话，那你就直接把你的图像库文件夹名字命名为database,并放在该路径下。
