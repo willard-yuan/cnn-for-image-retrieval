@@ -3,7 +3,7 @@
 
 clear all;close all;clc;
 
-run D:/matlabTools/matconvnet-1.0-beta10/matlab/vl_setupnn
+run ./matconvnet-1.0-beta10/matlab/vl_setupnn
 
 %% Step 1 lOADING PATHS
 path_imgDB = './database/';
