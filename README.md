@@ -2,7 +2,7 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)
 
-![](http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg)
+<p align="center"><img src="http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg" alt="precision-recall-64bits"/></p>
 
 ## 运行步骤
 
