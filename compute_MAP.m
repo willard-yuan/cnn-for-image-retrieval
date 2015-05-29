@@ -1,3 +1,5 @@
+% 下面mAP的具体计算过程请参阅：http://yongyuan.name/blog/evaluation-of-information-retrieval.html
+
 clear;clear all;
 addpath('./database/');
 
@@ -5,7 +7,7 @@ queryFile = './queryImgs.txt';
 classesFile = './databaseClasses.txt';
 load feat4096Norml.mat
 
-N = 12;
+N = 12; % 如果用于论文中，把这个值设为你所用数据库的大小
 
 fid = fopen(queryFile,'rt');
 queryImgs = textscan(fid, '%s');
