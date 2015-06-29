@@ -1,8 +1,6 @@
 % Author: Yong Yuan
 % Homepage: yongyuan.name
 
-feature('DefaultCharacterSet', 'UTF8')
-
 clear all;close all;clc;
 
 % viesion: matconvnet-1.0-beta10
@@ -17,10 +15,10 @@ addpath(path_imgDB);
 addpath tools;
 
 % viesion: matconvnet-1.0-beta10
-%net = load('I:/E/¿ÆÑÐ´úÂë/imagenetMat/imagenet-vgg-f.mat') ;
+%net = load('I:/imagenetMat/imagenet-vgg-f.mat') ;
 
 % viesion: matconvnet-1.0-beta12
-net = load('I:/E/¿ÆÑÐ´úÂë/CNN-for-Image-Retrieval/beta12/imagenet-vgg-f.mat') ;
+net = load('I:/CNN-for-Image-Retrieval/beta12/imagenet-vgg-f.mat') ;
 
 %% Step 2 LOADING IMAGE AND EXTRACTING FEATURE
 imgFiles = dir(path_imgDB);
