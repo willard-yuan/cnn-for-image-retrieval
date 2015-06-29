@@ -40,10 +40,12 @@ for i = 1:numImg
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
+       
        % viesion: matconvnet-1.0-beta10
        %featVec = res(19).x;
        % viesion: matconvnet-1.0-beta12
        featVec = res(20).x;
+       
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
@@ -52,10 +54,12 @@ for i = 1:numImg
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
+       
        % viesion: matconvnet-1.0-beta10
        %featVec = res(19).x;
        % viesion: matconvnet-1.0-beta12
        featVec = res(20).x;
+       
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
