@@ -34,6 +34,14 @@ python movefiles.py
 
 ## Python
 
+[Keras](https://github.com/fchollet/keras)，强力推荐
+
+Keras资源列表：
+
+[DeepLearning tutorial（6）易用的深度学习框架Keras简介](http://blog.csdn.net/u012162613/article/details/45397033)
+
+[DeepLearning tutorial（7）深度学习框架Keras的使用-进阶](http://blog.csdn.net/u012162613/article/details/45581421)
+
 [PDNN](https://github.com/yajiemiao/pdnn)，对应主页[PDNN: A Python Toolkit for Deep Learning](http://www.cs.cmu.edu/~ymiao/pdnntk.html)
 
 ## Matlab
