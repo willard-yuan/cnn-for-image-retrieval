@@ -3,14 +3,22 @@
 
 clear all;close all;clc;
 
-run ./matconvnet-1.0-beta10/matlab/vl_setupnn
+% viesion: matconvnet-1.0-beta10
+%run ./matconvnet-1.0-beta10/matlab/vl_setupnn
+
+% viesion: matconvnet-1.0-beta12
+run ./matconvnet-1.0-beta12/matlab/vl_setupnn
 
 %% Step 1 lOADING PATHS
 path_imgDB = './database/';
 addpath(path_imgDB);
 addpath tools;
 
-net = load('D:/matlabTools/matconvnet-1.0-beta10/matlab/test/imagenet-vgg-verydeep-16.mat') ;
+% viesion: matconvnet-1.0-beta10
+%net = load('I:/E/科研代码/imagenetMat/imagenet-vgg-f.mat') ;
+
+% viesion: matconvnet-1.0-beta12
+net = load('I:/E/科研代码/CNN-for-Image-Retrieval/beta12/imagenet-vgg-f.mat') ;
 
 %% Step 2 LOADING IMAGE AND EXTRACTING FEATURE
 imgFiles = dir(path_imgDB);
@@ -32,7 +40,10 @@ for i = 1:numImg
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
-       featVec = res(36).x;
+       % viesion: matconvnet-1.0-beta10
+       %featVec = res(19).x;
+       % viesion: matconvnet-1.0-beta12
+       featVec = res(20).x;
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
@@ -41,7 +52,10 @@ for i = 1:numImg
        im_ = imresize(im_, net.normalization.imageSize(1:2)) ;
        im_ = im_ - net.normalization.averageImage ;
        res = vl_simplenn(net, im_) ;
-       featVec = res(36).x;
+       % viesion: matconvnet-1.0-beta10
+       %featVec = res(19).x;
+       % viesion: matconvnet-1.0-beta12
+       featVec = res(20).x;
        featVec = featVec(:);
        feat = [feat; featVec'];
        fprintf('extract %d image\n\n', i);
