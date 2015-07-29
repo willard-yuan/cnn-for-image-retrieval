@@ -20,14 +20,6 @@ python movefiles.py
 - 检索可视化。这一步运行`queryInDatabaseDemo.m`即可。
 - 计算mAP。运行`compute_MAP.m`，关于mAP的计算，请参阅我画的mAP计算过程示意图：[信息检索评价指标](http://yongyuan.name/blog/evaluation-of-information-retrieval.html)
 
-**如果你在公开的数据集上测试CNN，可以把你跑的mAP提交上来，避免大家再做重复的测试**
-
-| 方法 | 数据维数 | 模型 | MAP |
-|:-----:|:-------:|:-----:|:-----:|
-|  |  |  |  |
-|  |  |  |  |
-|  |  | |  |
-
 ## CNN资源列表
 
 ### C++
