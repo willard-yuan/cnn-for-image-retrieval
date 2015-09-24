@@ -2,7 +2,8 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://search.yongyuan.name/)。web部分会在后面有时间整理了开源。
 
-2015/09/24更新：添加对MatConvNet最新版version 1.0-beta14的支持。
+**2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
+
 **2015/06/29更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta12的支持。
 
 **注意**：其中文件夹matconvnet-1.0-beta10是已经编译好了的，所以你在Matlab13下无法编译时，可以使用这个编译了的。
