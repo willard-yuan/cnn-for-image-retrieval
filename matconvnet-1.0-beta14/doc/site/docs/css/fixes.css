@@ -1,0 +1,44 @@
+/* Prevent blockquotes to be giant-sized, restyle */
+blockquote p {
+font-size: inherit;
+font-style: italic;
+}
+blockquote {
+border: 1px solid gray;
+}
+
+/* Have a space after ul */
+ul ul, ol ul, ul ol, ol ol {
+    margin-bottom: 10px ;
+}
+
+/* Nicer font for code samples */
+code, kbd, pre, samp {
+font-family: "Lucida Console","Courier New",monospace;
+}
+
+/* Solves the problem of jumping to section and being hidden by fixed nav-bar */
+/* https://github.com/twbs/bootstrap/issues/1768 */
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}
+
+/* Hides the prev, next and github links when browser width is between 768 and 1200px */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.nav.navbar-nav.navbar-right
+	{
+		display: none;
+	}
+}
+
+canvas {
+  background-color: transparent;
+}
+
+.shy {
+  display: none ;
+}

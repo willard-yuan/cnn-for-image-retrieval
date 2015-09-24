@@ -6,7 +6,7 @@ numRetrieval = 8;
 
 % load dataset
 if strcmp(db_name, 'database')
-    load feat4096Norml.mat;
+    load feat4096Norml1.mat;
     path_imgDB = './database/';
     addpath(path_imgDB);
     queryID = 2;

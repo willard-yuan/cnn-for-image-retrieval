@@ -3,11 +3,14 @@
 
 clear all;close all;clc;
 
-% viesion: matconvnet-1.0-beta10
+% version: matconvnet-1.0-beta10
 %run ./matconvnet-1.0-beta10/matlab/vl_setupnn
 
-% viesion: matconvnet-1.0-beta12
-run ./matconvnet-1.0-beta12/matlab/vl_setupnn
+% version: matconvnet-1.0-beta12
+%run ./matconvnet-1.0-beta12/matlab/vl_setupnn
+
+% version: matconvnet-1.0-beta14,ÍÆ¼öÊ¹ÓÃ
+run ./matconvnet-1.0-beta14/matlab/vl_setupnn
 
 %% Step 1 lOADING PATHS
 path_imgDB = './database/';
@@ -18,7 +21,7 @@ addpath tools;
 %net = load('I:/imagenetMat/imagenet-vgg-f.mat') ;
 
 % viesion: matconvnet-1.0-beta12
-net = load('I:/CNN-for-Image-Retrieval/beta12/imagenet-vgg-f.mat') ;
+net = load('I:/imagenetMat/imagenet-vgg-f.mat') ;
 
 %% Step 2 LOADING IMAGE AND EXTRACTING FEATURE
 imgFiles = dir(path_imgDB);
