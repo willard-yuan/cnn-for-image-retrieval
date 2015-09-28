@@ -48,4 +48,5 @@ for root, dirs, files in os.walk(databaseClasses):
         #  we can print the folder name so we know that all files in the folder are done
         print '%s, %d images' % (str_each_folder, files_number)
         f.writelines('%s %d\n' % ('{0:03}'.format(i+1)+'_'+str_each_folder, files_number))
+g.close
 f.close
