@@ -1,6 +1,8 @@
 ## CNN for Image Retrieval
 
-博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://search.yongyuan.name/)。web部分会在后面有时间整理了开源。
+博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://yongyuan.name/pic)。
+
+**2015/10/20更新**：Web演示部分代码公开[CNN-Web-Demo-for-Image-Retrieval](https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval)。
 
 **2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
 
