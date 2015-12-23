@@ -41,6 +41,8 @@ Keras资源列表：
 
 [DeepLearning tutorial（7）深度学习框架Keras的使用-进阶](http://blog.csdn.net/u012162613/article/details/45581421)
 
+[Keras VGG-16模型 VGG16 model for Keras](https://gist.github.com/baraldilorenzo/07d7802847aaad0a35d3)
+
 [PDNN](https://github.com/yajiemiao/pdnn)，对应主页[PDNN: A Python Toolkit for Deep Learning](http://www.cs.cmu.edu/~ymiao/pdnntk.html)
 
 ### Matlab
