@@ -6,6 +6,8 @@
 
 **2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
 
+**2015/12/31更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta17的支持，删掉原来的版本(预训练的模型请到matconvnet官网下载最新的模型)。
+
 **2015/06/29更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta12的支持。
 
 **注意**：其中文件夹matconvnet-1.0-beta10是已经编译好了的，所以你在Matlab13下无法编译时，可以使用这个编译了的。
