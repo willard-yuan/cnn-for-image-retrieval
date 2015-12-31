@@ -2,6 +2,8 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://yongyuan.name/pic)。
 
+**2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
+
 **2015/10/20更新**：Web演示部分代码公开[CNN-Web-Demo-for-Image-Retrieval](https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval)。
 
 **2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
