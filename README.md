@@ -2,6 +2,27 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://yongyuan.name/pic)。
 
+**注意**：其中文件夹matconvnet-1.0-beta17是已经编译好了的，鉴于MatConvNet只能在**Matlab 2014**及其以上以及系统必须是**64位**，所以在使用此工具箱之前得满足这两个条件。如果是Pythoner，推荐使用[flask-keras-cnn-image-retrieval](https://github.com/willard-yuan/flask-keras-cnn-image-retrieval)，纯Python，非常易于写成在线图像搜索应用。
+
+示例：Caltech-256图像数据库
+<p align="center"><img src="http://www.vision.caltech.edu/VisionWiki/images/thumb/2/23/Caltech256a_crop.png/537px-Caltech256a_crop.png" alt="caltech256"/></p>
+Caltech-256图像数据库上搜索结果
+<p align="center"><img src="http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg" alt="search result"/></p>
+
+### 运行步骤
+
+1). 如果不需要计算mAP的话，那就直接把你的图像库文件夹名字命名为`database`，并将图片全部放在放在`database`文件夹下即可。如果你要在后面计算MAP（平均检索精度）的话，要确保图像数据库做成文件夹`databaseClassified`中的形式，然后执行下面命令：
+
+```sh
+python movefiles.py
+```
+
+2). 接着便可以抽取特征。运行`extractCNN.m`，要用parfor并行的话，直接修改注释部分即可。
+
+3). 检索可视化。这一步运行`queryInDatabaseDemo.m`即可。
+
+4). 计算mAP。不需要计算MAP的这步略过。运行`compute_MAP.m`，关于mAP的计算，请参阅我画的mAP计算过程示意图：[信息检索评价指标](http://yongyuan.name/blog/evaluation-of-information-retrieval.html)，这个计算mAP的脚本是按照那个流程中定义的mAP计算方式来写的。
+
 **2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
 
 **2015/10/20更新**：Web演示部分代码公开[CNN-Web-Demo-for-Image-Retrieval](https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval)。
@@ -11,23 +32,6 @@
 **2015/12/31更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta17的支持，删掉原来的版本(预训练的模型请到matconvnet官网下载最新的模型)。
 
 **2015/06/29更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta12的支持。
-
-**注意**：其中文件夹matconvnet-1.0-beta10是已经编译好了的，所以你在Matlab13下无法编译时，可以使用这个编译了的。
-<p align="center"><img src="http://www.vision.caltech.edu/VisionWiki/images/thumb/2/23/Caltech256a_crop.png/537px-Caltech256a_crop.png" alt="caltech256"/></p>
-
-<p align="center"><img src="http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg" alt="search result"/></p>
-
-### 运行步骤
-
-- 首先你的图像数据库做成文件夹databaseClassified中的形式，以方便后面计算mAP。如果不需要计算mAP的话，那你就直接把你的图像库文件夹名字命名为database,并放在该路径下。
-
-```
-python movefiles.py
-```
-
-- 接着便可以抽取特征。运行`extractCNN.m`，要用parfor并行的话，直接修改注释部分即可。
-- 检索可视化。这一步运行`queryInDatabaseDemo.m`即可。
-- 计算mAP。运行`compute_MAP.m`，关于mAP的计算，请参阅我画的mAP计算过程示意图：[信息检索评价指标](http://yongyuan.name/blog/evaluation-of-information-retrieval.html)
 
 ## CNN资源列表
 
