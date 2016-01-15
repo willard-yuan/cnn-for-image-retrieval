@@ -57,5 +57,9 @@ for i = 1:numImg
    end
 end
 
+% reduce demension by PCA, recomend to reduce it to 128 dimension.
+%[coeff, score, latent] = princomp(feat);
+%feat = feat*coeff(:, 1:128);
+
 feat_norm = normalize1(feat);
 save('feat4096Norml.mat','feat_norm', 'imgNamList', '-v7.3');
