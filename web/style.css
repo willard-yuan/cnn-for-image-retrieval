@@ -1,0 +1,49 @@
+body {
+    background-color:#fff;/*#eee;*/
+    font-family:"Helvetica Neue",Helvetica Neue,Helvetica,Hiragino Sans GB,Microsoft Yahei,Arial;
+}
+
+.marginDown{
+    margin-bottom:15px;
+}
+
+.jumbotron {
+        margin: 40px 0; 
+        padding: 40px 0;
+        text-align: center;
+        background-color:#eee;
+}
+
+.randButton {
+        margin-bottom: 25px; 
+        text-align: center;
+}
+
+a:link { text-decoration: none;}
+
+/* Footer */
+footer {
+  font-size: small;
+  color: #666;
+  line-height: 2em;
+  color: #858585;
+  text-align: center;
+  margin: 1em 0;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+}
+
+footer .linkings {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  /*text-align: left;*/
+  width: 100%;
+  display: block;
+  border: none;
+  line-height:100%
+}
+

@@ -1,5 +1,8 @@
 % Author: Yong Yuan
 % Homepage: yongyuan.name
+% If matconvnet-1.0-beta18 is used, and get the error "Reference to
+% non-existent field 'precious'". You must download the lastest pre-trained model
+% https://github.com/vlfeat/matconvnet/issues/389
 
 clear all;close all;clc;
 

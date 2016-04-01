@@ -1,15 +1,15 @@
 clear all; close all; clc;
 addpath('tools');
 
-db_name = 'database'; % 'CALTECH256' as a option
-numRetrieval = 8;
+db_name = 'faceDataset'; % 'CALTECH256' as a option
+numRetrieval = 20;
 
 % load dataset
-if strcmp(db_name, 'database')
+if strcmp(db_name, 'faceDataset')
     load feat4096Norml.mat;
-    path_imgDB = './database/';
+    path_imgDB = './faceDataset/';
     addpath(path_imgDB);
-    queryID = 2;
+    queryID = 1900;
 elseif strcmp(db_name, '256_ObjectCategories')
     load 256feat2048Norml.mat; % 0.495471
     % load 256feat4096Norml.mat % 0.484413
