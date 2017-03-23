@@ -16,7 +16,7 @@ elseif strcmp(db_name, '256_ObjectCategories')
     path_imgDB = './256_ObjectCategories/';
     addpath(path_imgDB);
     %example
-    % queryID = 310; %
+    queryID = 1; %
 end
 
 %if not normalize, then do
