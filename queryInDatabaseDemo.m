@@ -1,7 +1,7 @@
 clear all; close all; clc;
 addpath('tools');
 
-db_name = 'faceDataset'; % 'CALTECH256' as a option
+db_name = '256_ObjectCategories'; % '256_ObjectCategories' as a option
 numRetrieval = 20;
 
 % load dataset
