@@ -2,7 +2,7 @@ clear all; close all; clc;
 addpath('tools');
 
 db_name = '256_ObjectCategories'; % '256_ObjectCategories' as a option
-numRetrieval = 20;
+numRetrieval = 10;
 
 % load dataset
 if strcmp(db_name, 'faceDataset')
@@ -13,7 +13,7 @@ if strcmp(db_name, 'faceDataset')
 elseif strcmp(db_name, '256_ObjectCategories')
     load 256feat2048Norml.mat; % 0.495471
     % load 256feat4096Norml.mat % 0.484413
-    path_imgDB = './256_ObjectCategories/';
+    path_imgDB = './database/';
     addpath(path_imgDB);
     %example
     queryID = 1; %
