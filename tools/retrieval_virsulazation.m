@@ -9,10 +9,12 @@ QueryVec = featNorm(queryID, :);
 [n,d] = size(featNorm);
 score = zeros(n, 1);
 
-for loop = 1:n
-    VecTemp = featNorm(loop, :);
-    score(loop) = QueryVec*VecTemp';
-end
+%for loop = 1:n
+%    VecTemp = featNorm(loop, :);
+%    score(loop) = QueryVec*VecTemp';
+%end
+
+score = (QueryVec*featNorm')';
 
 [~, index] = sort(score, 'descend');
 rank_image_ID = index;
