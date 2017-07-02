@@ -26,7 +26,7 @@ python movefiles.py
 > 非常的amazing, 除了验证降维到128D后损失不减外，惊奇地发现4096D的CNN降维到128D后精度还有提高，一种可能的解释：CNN特征也有一定的信息冗余，信息冗余所带来的影响比降维所带来的损失的影响要更大。结论：You should reduce the dimension of CNN when you use if.
 
 <p align="center">PCA降维对CNN特征的影响</p>
-<p align="center"><img src="http://i300.photobucket.com/albums/nn17/willard-yuan/PCA-CNN_zps9gzhmg4q.png"  width = 500 alt="search result"/></p>
+<p align="center"><img src="http://ose5hybez.bkt.clouddn.com/github/PCA-CNN_zps9gzhmg4q.PNG"  width = 500 alt="search result"/></p>
 
 上面实验使用的是本项目代码，图像数据集使用的是Caltech101。
 
