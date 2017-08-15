@@ -4,13 +4,21 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://yongyuan.name/pic)。
 
-<<<<<<< HEAD
 **2017/08/15更新**：增加Python版本，[Caffe版本](https://github.com/willard-yuan/cnn-cbir-benchmark/tree/master/fc_retrieval)，[Keras版本](https://github.com/willard-yuan/flask-keras-cnn-image-retrieval)。
 
 **2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
-=======
+
+**2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
+
+**2015/10/20更新**：Web演示部分代码公开[CNN-Web-Demo-for-Image-Retrieval](https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval)。
+
+**2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
+
+**2015/12/31更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta17的支持，删掉原来的版本(预训练的模型请到matconvnet官网下载最新的模型)。
+
+**2015/06/29更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta12的支持。
+
 **注意**：其中文件夹matconvnet-1.0-beta17是已经编译好了的，鉴于MatConvNet只能在**Matlab 2014**及其以上以及系统必须是**64位**，所以在使用此工具箱之前得满足这两个条件。如果是Pythoner，推荐使用[flask-keras-cnn-image-retrieval](https://github.com/willard-yuan/flask-keras-cnn-image-retrieval)，纯Python，非常易于写成在线图像搜索应用。
->>>>>>> f52b28e69a83483aa2aad3fe36cd9a08322aba19
 
 <p align="center">Caltech-256图像数据库上搜索结果</p>
 <p align="center"><img src="http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg"  width = 600 alt="search result"/></p>
@@ -42,16 +50,6 @@ python movefiles.py
 >ANN is really fantastic, it makes such much easier. You could also try something like PCA on your 4096-d vector and try to get it down to 128-d. It would save some space and (ideally) not hurt accuracy.
 
 所以，如果采用了CNN特征的话，推荐将其降维到128D。
-
-**2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
-
-**2015/10/20更新**：Web演示部分代码公开[CNN-Web-Demo-for-Image-Retrieval](https://github.com/willard-yuan/CNN-Web-Demo-for-Image-Retrieval)。
-
-**2015/09/24更新**：添加对MatConvNet最新版version 1.0-beta14的支持。
-
-**2015/12/31更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta17的支持，删掉原来的版本(预训练的模型请到matconvnet官网下载最新的模型)。
-
-**2015/06/29更新**：添加对[MatConvNet](http://www.vlfeat.org/matconvnet/)最新版version 1.0-beta12的支持。
 
 ## CNN资源列表
 
