@@ -1,5 +1,8 @@
 % Author: Yong Yuan
 % Homepage: yongyuan.name
+% If matconvnet-1.0-beta18 is used, and get the error "Reference to
+% non-existent field 'precious'". You must download the lastest pre-trained model
+% https://github.com/vlfeat/matconvnet/issues/389
 
 clear all;close all;clc;
 
@@ -56,6 +59,10 @@ for i = 1:numImg
        fprintf('extract %d image\n\n', i);
    end
 end
+
+% reduce demension by PCA, recomend to reduce it to 128 dimension.
+%[coeff, score, latent] = princomp(feat);
+%feat = feat*coeff(:, 1:128);
 
 feat_norm = normalize1(feat);
 save('feat4096Norml.mat','feat_norm', 'imgNamList', '-v7.3');
