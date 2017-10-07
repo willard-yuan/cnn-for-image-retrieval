@@ -4,6 +4,8 @@
 
 博文：[Image retrieval using MatconvNet and pre-trained imageNet](http://yongyuan.name/blog/image-retrieval-using-MatconvNet-and-pre-trained-imageNet.html)，对应web演示主页[picSearch](http://yongyuan.name/pic)。
 
+**2017/10/08**: 构建CBIR检索对比框架[cnn-cbir-benchmark](https://github.com/willard-yuan/cnn-cbir-benchmark)，包括Fisher Vector, VLAD, FC, RMAC, CROW.
+
 **2017/08/15更新**：增加Python版本，[Caffe版本](https://github.com/willard-yuan/cnn-cbir-benchmark/tree/master/fc_retrieval)，[Keras版本](https://github.com/willard-yuan/flask-keras-cnn-image-retrieval)。
 
 **2015/12/31更新**：添加对MatConvNet最新版version 1.0-beta17的支持，预训练的模型请到Matconvnet官网下载最新的模型。
