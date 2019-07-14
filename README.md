@@ -23,7 +23,7 @@
 **注意**：其中文件夹matconvnet-1.0-beta17是已经编译好了的，鉴于MatConvNet只能在**Matlab 2014**及其以上以及系统必须是**64位**，所以在使用此工具箱之前得满足这两个条件。如果是Pythoner，推荐使用[flask-keras-cnn-image-retrieval](https://github.com/willard-yuan/flask-keras-cnn-image-retrieval)，纯Python，非常易于写成在线图像搜索应用。
 
 <p align="center">Caltech-256图像数据库上搜索结果</p>
-<p align="center"><img src="http://yongyuan.name/images/posts/2015-04-02/airplane-image-retrieval.jpg"  width = 600 alt="search result"/></p>
+<p align="center"><img src="http://yongyuan.name/imgs/posts/airplane_image_retrieval.jpg"  width = 600 alt="search result"/></p>
 
 ### 运行步骤
 
@@ -44,7 +44,7 @@ python movefiles.py
 > 非常的amazing, 除了验证降维到128D后损失不减外，惊奇地发现4096D的CNN降维到128D后精度还有提高，一种可能的解释：CNN特征也有一定的信息冗余，信息冗余所带来的影响比降维所带来的损失的影响要更大。结论：You should reduce the dimension of CNN when you use if.
 
 <p align="center">PCA降维对CNN特征的影响</p>
-<p align="center"><img src="http://ose5hybez.bkt.clouddn.com/github/PCA-CNN_zps9gzhmg4q.PNG"  width = 500 alt="search result"/></p>
+<p align="center"><img src="http://yongyuan.name/imgs/posts/pca_dnn.png"  width = 500 alt="search result"/></p>
 
 上面实验使用的是本项目代码，图像数据集使用的是Caltech101。
 
@@ -57,7 +57,7 @@ python movefiles.py
 
 ### C++
 
-[conv-net-version-3](https://github.com/xingdi-eric-yuan/conv-net-version-3),对应博客[Convolutional Neural Networks III](http://eric-yuan.me/cnn3/)
+[conv-net-version-3](https://github.com/xingdi-eric-yuan/conv-net-version-3)，对应博客[Convolutional Neural Networks III](http://eric-yuan.me/cnn3/)
 
 ### Python
 
